@@ -1,0 +1,4 @@
+awk 'BEGIN {FS=" ";} {print $7;}' ~/.SAPGUI/SAPGUILandscape.xml
+| awk '{FS="="} {print $2;}'
+| sed -n 4,15p |sed 's/^\s*./ /g' 
+| sed 's/.$//' > ~/.ssh/config
